@@ -38,7 +38,7 @@ defmodule Homestay.MixProject do
       {:postgrex, ">= 0.0.0"},
       {:phoenix_html, "~> 4.0"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
-      {:phoenix_live_view, "~> 0.20.2"},
+      {:phoenix_live_view, "~> 0.20.12"},
       {:floki, ">= 0.30.0", only: :test},
       {:phoenix_live_dashboard, "~> 0.8.3"},
       {:esbuild, "~> 0.8", runtime: Mix.env() == :dev},
@@ -58,11 +58,11 @@ defmodule Homestay.MixProject do
       {:jason, "~> 1.2"},
       {:dns_cluster, "~> 0.1.1"},
       {:bandit, "~> 1.2"},
-      {:ex_aws, "~> 2.0"},
-      {:ex_aws_s3, "~> 2.0"},
-      {:poison, "~> 3.0"},
-      {:hackney, "~> 1.9"},
-      {:sweet_xml, "~> 0.6.6"},
+      {:ex_aws, "~> 2.5"},
+      {:ex_aws_s3, "~> 2.5"},
+      {:poison, "~> 5.0"},
+      {:hackney, "~> 1.20"},
+      {:sweet_xml, "~> 0.7.4"},
     ]
   end
 

@@ -114,14 +114,15 @@ if config_env() == :prod do
   #     config :swoosh, :api_client, Swoosh.ApiClient.Hackney
   #
   # See https://hexdocs.pm/swoosh/Swoosh.html#module-installation for details.
-  config :ex_aws,
-    debug_requests: true,
-    json_codec: Jason,
-    access_key_id: {:system, "AWS_ACCESS_KEY_ID"},
-    secret_access_key: {:system, "AWS_SECRET_ACCESS_KEY"}
+config :ex_aws,
+  debug_requests: true,
+  json_codec: Jason,
+  access_key_id: {:system, "AWS_ACCESS_KEY_ID"},
+  secret_access_key: {:system, "AWS_SECRET_ACCESS_KEY"}
 
-  config :ex_aws, :s3,
-    scheme: "https://",
-    host: "fly.storage.tigris.dev",
-    region: "auto"
+config :ex_aws, :s3,
+  scheme: "https://",
+  host: "fly.storage.tigris.dev",
+  region: "auto"
+
 end
