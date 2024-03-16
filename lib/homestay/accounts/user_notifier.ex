@@ -8,7 +8,7 @@ defmodule Homestay.Accounts.UserNotifier do
     email =
       new()
       |> to(recipient)
-      |> from({"Homestay", "contact@example.com"})
+      |> from({"roslanr@gmail.com", "noreply@perisian.xyz"})
       |> subject(subject)
       |> text_body(body)
 

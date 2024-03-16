@@ -6,6 +6,5 @@ defmodule Homestay.Repo.Migrations.ModifyConfirmedAtTypeInUsersTable do
       remove :confirmed_at
       add :confirmed_at, :utc_datetime
     end
-
   end
-  end
+end
