@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for home-pipeline on 2024-03-11T01:11:53+08:00
+# fly.toml app configuration file generated for homestays on 2024-03-17T12:57:39+08:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'home-pipeline'
+app = 'homestays'
 primary_region = 'sin'
 kill_signal = 'SIGTERM'
 
@@ -13,7 +13,7 @@ kill_signal = 'SIGTERM'
   release_command = '/app/bin/migrate'
 
 [env]
-  PHX_HOST = 'home-pipeline.fly.dev'
+  PHX_HOST = 'homestays.fly.dev'
   PORT = '8080'
 
 [http_service]
